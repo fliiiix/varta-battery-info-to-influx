@@ -100,7 +100,7 @@ data = "battery,name={} percentfull={}i,grid={}i,battery={}i,production={}i,usag
     power_usage
 )
 
-r = requests.post(INFLUX["url"], data=data, auth=(INFLUX["username"], INFLUX["password"])
+r = requests.post(INFLUX["url"], data=data, auth=(INFLUX["username"], INFLUX["password"]))
 
 print(data)
 print(r.text)
